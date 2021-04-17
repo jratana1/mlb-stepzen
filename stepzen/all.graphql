@@ -1,0 +1,7 @@
+type Person {
+    name: String
+}
+
+type Query {
+    characters: [Person] @rest(endpoint: "https://swapi.dev/api/people/", resultroot: "results[]")
+}

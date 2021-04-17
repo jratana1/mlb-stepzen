@@ -1,7 +1,11 @@
-type HelloWorld @mock {
-   message: String! @mockfn(name: "List", values: ["Hello, world!"])
-}
-
-type Query {
-   helloWorld: HelloWorld
+schema
+  @sdl(
+    files: [
+      "helloworld.graphql"
+      "player.graphql"
+      "single.graphql"
+      "all.graphql"
+    ]
+  ) {
+  query: Query
 }

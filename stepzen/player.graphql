@@ -1,0 +1,8 @@
+type Player {
+    id: ID
+    firstName: String
+    lastName: String
+}
+type Query {
+    players: [Player] @rest (endpoint: "https://statsapi.mlb.com/api/v1/sports/1/players/?fields=people,id,firstName,lastName,primaryPosition,code,name,type,abbreviation", resultroot: "people[]")
+}
