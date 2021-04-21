@@ -11,3 +11,197 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+  position: fixed;
+  overflow: hidden;
+  background: #3398db;
+}
+
+.App {
+  margin: 0;
+  padding: 30px;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  font-size: 12px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.Reading-Container{
+  height: 80%;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.Card-Reading-Container {
+  width: 30vh;
+  height: 50vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.Card-Index{
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-size: 12px;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Container {
+  width: 30vh;
+  height: 50vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.Card-Front, .Card-Back {
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30vh;
+  max-width: 300px;
+  height: 50vh;
+  max-height: 570px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px 0px rgba(50, 50, 73, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  position: absolute;
+  will-change: transform, opacity;
+  font-size: 1.5vh;
+}
+
+
+.Card-Name {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  display: inline-flex;
+  padding:5%;
+  width: 90%;
+}
+
+.Position{
+  position: absolute;
+  right: 5px;
+}
+
+.Header{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.question{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Form-Input{
+  display: flex;
+  flex-direction: column
+}
+
+.Card-Text{
+  border-radius: 10px;
+  text-align:left
+}
+
+.Card-Reading-Text{
+  border-radius: 10px;
+}
+
+.Navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.Nav-Item{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.Reading-List{
+  top: 0;
+  width:220px; 
+  right:0; 
+  bottom: 0;
+  position:absolute;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+    margin:0;
+    display: block;
+    font-size: 1.5em;
+    padding-block-start: 0.83em;
+    padding-block-end: 0.83em;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    font-weight: bold;
+}
+

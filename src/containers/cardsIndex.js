@@ -8,9 +8,9 @@ export default function CardsIndex(props)  {
     // const query = useSelector(state => state.count.query);
     
     // let cards = props.props.filter(card => card.attributes.name.includes(query))
-
+  
     return  <div className="Card-Index">
-                {props.props.map((player) => <CardContainer props={card}/>)}
+                {props.props.map((player) => <CardContainer props={player}/>)}
             </div>
 
 }

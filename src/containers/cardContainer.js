@@ -10,7 +10,7 @@ export default function CardContainer(props)  {
 
 
     return  <div className="Card-Container" onClick={onCardClick}>
-                    <Card props={props.props.attributes} flipped= {flipped} image={props.props.attributes.image}/>
+                    <Card props={props.props} flipped= {flipped} />
             </div>
 
 }

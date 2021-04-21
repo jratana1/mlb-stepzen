@@ -1,6 +1,7 @@
 import HelloWorld from './HelloWorld';
 import Header from './components/header'
-
+import CardsIndex from './containers/cardsIndex'
+import CardFilter from './components/cardFilter'
 import React, { useState, useEffect } from 'react'
 import { gql, useQuery } from '@apollo/client';
 import { HashRouter, Route, Link } from 'react-router-dom';
@@ -83,9 +84,8 @@ const { loading, error, data } = useQuery(GET_PLAYERS);
               <HelloWorld />
             </Route>
             <Route exact path="/cards" >
-              {/* <CardFilter/>
-              <CardsIndex props={cards}/> */}
-              <CardsIndex props={players}/>
+              <CardFilter props={players}/>
+              {/* <CardsIndex props={players}/> */}
             </Route>
             <Route exact path="/readings" >
                 {/* <ReadingsContainer cards={cards}/> */}
