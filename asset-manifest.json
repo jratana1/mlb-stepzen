@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/jratana1/mlb-stepzen/static/css/main.5421d39b.chunk.css",
+    "main.js": "/jratana1/mlb-stepzen/static/js/main.7d8a9e40.chunk.js",
+    "main.js.map": "/jratana1/mlb-stepzen/static/js/main.7d8a9e40.chunk.js.map",
+    "runtime-main.js": "/jratana1/mlb-stepzen/static/js/runtime-main.b79a8bc7.js",
+    "runtime-main.js.map": "/jratana1/mlb-stepzen/static/js/runtime-main.b79a8bc7.js.map",
+    "static/js/2.5b23197c.chunk.js": "/jratana1/mlb-stepzen/static/js/2.5b23197c.chunk.js",
+    "static/js/2.5b23197c.chunk.js.map": "/jratana1/mlb-stepzen/static/js/2.5b23197c.chunk.js.map",
+    "static/js/3.8a7012cf.chunk.js": "/jratana1/mlb-stepzen/static/js/3.8a7012cf.chunk.js",
+    "static/js/3.8a7012cf.chunk.js.map": "/jratana1/mlb-stepzen/static/js/3.8a7012cf.chunk.js.map",
+    "index.html": "/jratana1/mlb-stepzen/index.html",
+    "static/css/main.5421d39b.chunk.css.map": "/jratana1/mlb-stepzen/static/css/main.5421d39b.chunk.css.map",
+    "static/js/2.5b23197c.chunk.js.LICENSE.txt": "/jratana1/mlb-stepzen/static/js/2.5b23197c.chunk.js.LICENSE.txt",
+    "static/media/20200715_112939.5b54978b.jpg": "/jratana1/mlb-stepzen/static/media/20200715_112939.5b54978b.jpg",
+    "static/media/baseball-batter-silhouette-clip-art-1.eeff709b.svg": "/jratana1/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-1.eeff709b.svg",
+    "static/media/baseball-batter-silhouette-clip-art-2.94d2e6bc.svg": "/jratana1/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-2.94d2e6bc.svg",
+    "static/media/baseball-batter-silhouette-clip-art-3.9ccc83bd.svg": "/jratana1/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-3.9ccc83bd.svg",
+    "static/media/baseball-batter-silhouette-clip-art-4.0b936b08.svg": "/jratana1/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-4.0b936b08.svg",
+    "static/media/baseball-batter-silhouette-clip-art-5.3ea0aa02.svg": "/jratana1/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-5.3ea0aa02.svg",
+    "static/media/baseball-pitcher-silhouette-clip-art-1.3bb9bc8b.svg": "/jratana1/mlb-stepzen/static/media/baseball-pitcher-silhouette-clip-art-1.3bb9bc8b.svg",
+    "static/media/baseball-pitcher-silhouette-clip-art-2.ac2c1c85.svg": "/jratana1/mlb-stepzen/static/media/baseball-pitcher-silhouette-clip-art-2.ac2c1c85.svg",
+    "static/media/baseball-pitcher-silhouette-clip-art-3.6f1066a7.svg": "/jratana1/mlb-stepzen/static/media/baseball-pitcher-silhouette-clip-art-3.6f1066a7.svg",
+    "static/media/baseball-pitcher-silhouette-clip-art-4.9d7e336a.svg": "/jratana1/mlb-stepzen/static/media/baseball-pitcher-silhouette-clip-art-4.9d7e336a.svg",
+    "static/media/baseball-pitcher-silhouette-clip-art-5.7f0c07d1.svg": "/jratana1/mlb-stepzen/static/media/baseball-pitcher-silhouette-clip-art-5.7f0c07d1.svg",
+    "static/media/data.3be12a86.png": "/jratana1/mlb-stepzen/static/media/data.3be12a86.png",
+    "static/media/logo.6ce24c58.svg": "/jratana1/mlb-stepzen/static/media/logo.6ce24c58.svg",
+    "static/media/running-baseball-player-silhouette-clip-art-1.023cb465.svg": "/jratana1/mlb-stepzen/static/media/running-baseball-player-silhouette-clip-art-1.023cb465.svg",
+    "static/media/running-baseball-player-silhouette-clip-art-2.1f04dd42.svg": "/jratana1/mlb-stepzen/static/media/running-baseball-player-silhouette-clip-art-2.1f04dd42.svg",
+    "static/media/running-baseball-player-silhouette-clip-art-3.18af7673.svg": "/jratana1/mlb-stepzen/static/media/running-baseball-player-silhouette-clip-art-3.18af7673.svg",
+    "static/media/running-baseball-player-silhouette-clip-art-4.34ca58f7.svg": "/jratana1/mlb-stepzen/static/media/running-baseball-player-silhouette-clip-art-4.34ca58f7.svg",
+    "static/media/running-baseball-player-silhouette-clip-art-5.550d853e.svg": "/jratana1/mlb-stepzen/static/media/running-baseball-player-silhouette-clip-art-5.550d853e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b79a8bc7.js",
+    "static/js/2.5b23197c.chunk.js",
+    "static/css/main.5421d39b.chunk.css",
+    "static/js/main.7d8a9e40.chunk.js"
+  ]
+}
