@@ -1,10 +1,11 @@
 {
-  "homepage": "https://github.com/jratana1/mlb-stepzen",
+  "homepage": "https://jratana1.github.io/mlb-stepzen/",
   "name": "stepzen-starter-default",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.13",
+    "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
