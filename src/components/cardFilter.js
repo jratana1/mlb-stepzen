@@ -12,7 +12,7 @@ export default function CardFilter(props) {
     
     setFilteredPlayers(
       props.props.players.filter((player) => {
-            if (filter == "all") {
+            if (filter === "all") {
                 return (player.firstName.toLowerCase().includes(search.toLowerCase()) ||
                         player.lastName.toLowerCase().includes(search.toLowerCase()) )
             } else {

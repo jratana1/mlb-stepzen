@@ -1,4 +1,3 @@
-import HelloWorld from './HelloWorld';
 import Header from './components/header'
 import React, { useState, useEffect } from 'react'
 import { gql, useQuery } from '@apollo/client';
@@ -7,9 +6,6 @@ import ReadingsContainer from './containers/readingsContainer'
 import CardFilter from './components/cardFilter'
 import Landing from './containers/landing'
 
-
-
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -73,7 +69,7 @@ function App() {
     }
   }
 `;
-const { loading, error, data } = useQuery(GET_PLAYERS);
+const { data } = useQuery(GET_PLAYERS);
 
   useEffect(
     () => {

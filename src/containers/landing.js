@@ -26,7 +26,7 @@ const Team = () => {
                     <p>React-Spring</p>
                 </div>    
                 <div className= "Techbox">
-                    <img src='https://res.cloudinary.com/practicaldev/image/fetch/s--rIjbQB7r--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/3943/af485a9e-2bd8-4dbd-97d0-b998e5adcc0c.png' height="200px" width= "200px"/>
+                    <img src='https://res.cloudinary.com/practicaldev/image/fetch/s--rIjbQB7r--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/3943/af485a9e-2bd8-4dbd-97d0-b998e5adcc0c.png' alt="That's ME!" height="200px" width= "200px"/>
                     <p>StepZen</p>
                 </div>
             </div>
