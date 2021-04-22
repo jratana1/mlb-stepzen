@@ -29,6 +29,7 @@ export default function Card(props) {
       })
 
     const backImage = () => {
+        
         if (props.props.abbreviation === "P"){
             let array= [pitcher1,pitcher2,pitcher3,pitcher4,pitcher5]
             return array[Math.floor(Math.random() * 5)];
@@ -41,6 +42,7 @@ export default function Card(props) {
         }
 
     const frontText = () => {
+        
         if (props.props.abbreviation !== "P"){
             
         return  <div className="Card-Text" >
@@ -56,14 +58,20 @@ export default function Card(props) {
                     <p className="Card-Upright">SB % : {props.props.hittingStats.stolenBasesPercentage}</p>
                     <p className="Card-Upright">SO : {props.props.hittingStats.strikeOuts}</p>
 
-
-
                 </div>
         } else {
             return  <div className="Card-Text" >
-                <p className="Card-Upright">{props.props.lastName}</p>
-                    <p className="Card-Upright">{props.props.lastName}</p>
-                    <p className="Card-Upright">{props.props.lastName}</p>
+                    <p className="Card-Upright">Wins : {props.props.pitchingStats.wins}</p>
+                    <p className="Card-Upright">Losses : {props.props.pitchingStats.losses}</p>
+                    <p className="Card-Upright">Saves : {props.props.pitchingStats.saves}</p>
+                    <p className="Card-Upright">ERA : {props.props.pitchingStats.era}</p>
+                    <p className="Card-Upright">WHIP : {props.props.pitchingStats.whip}</p>
+                    <p className="Card-Upright">IP : {props.props.pitchingStats.inningsPitched}</p>
+                    <p className="Card-Upright">K : {props.props.pitchingStats.strikes}</p>
+                    <p className="Card-Upright">K % : {props.props.pitchingStats.strikePercentage}</p>
+                    <p className="Card-Upright">Pitch Count : {props.props.pitchingStats.numberOfPitches}</p>
+                    <p className="Card-Upright">Complete Games : {props.props.pitchingStats.completeGames}</p>
+                    <p className="Card-Upright">Shutouts : {props.props.pitchingStats.shutouts}</p>
             </div>
         }
     }
@@ -74,16 +82,14 @@ export default function Card(props) {
     return <>
     <a.div className="Card-Back" style={{
         backgroundImage: `url(${backImage()})`,
-        backgroundColor: `rgba(217, 195, 195, .9)`,
+        backgroundColor: `rgba(217, 195, 195, 1)`,
         backgroundRepeat  : 'no-repeat',
         backgroundPosition: 'center',
         opacity: opacity.interpolate(o => 1 - o),
         transform,}}
         >
-           <h2 className="Card-Name" style={{backgroundColor: `rgba(255, 255, 255, .9)`}}>{props.props.firstName} {props.props.lastName}
-           <div className="Position">{props.props.abbreviation}</div>
-           </h2> 
-
+           <h2 className="Card-Name" style={{backgroundColor: `rgba(255, 255, 255, .9)`}}>{props.props.firstName} {props.props.lastName}</h2> 
+           <h2 className="Position" style={{backgroundColor: `rgba(255, 255, 255, .9)`}}>{props.props.abbreviation}</h2>
     </a.div> 
     <a.div className="Card-Front" style={{
         opacity,

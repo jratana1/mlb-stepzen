@@ -7,6 +7,8 @@ type Player {
         @materializer (query: "teamById", arguments: [{name: "id", field: "team_id"}])
     hittingStats: HittingStats
         @materializer (query: "hittingStats", arguments: [{name: "id", field: "id"}])
+    pitchingStats: PitchingStats
+        @materializer (query: "pitchingStats", arguments: [{name: "id", field: "id"}])
     link: String
     pos_name: String
     type: String
@@ -45,6 +47,32 @@ type HittingStats {
     rbi: Int
     groundOutsToAirouts: Float
     atBatsPerHomeRun: Float
+}
+
+type PitchingStats {
+            numberOfPitches: Int
+            era: Float
+            inningsPitched: Float
+            wins: Int
+            losses: Int
+            saves: Int
+            saveOpportunities: Int
+            earnedRuns: Int
+            whip: Float
+            gamesPitched: Int
+            completeGames: Int
+            shutouts: Int
+            strikes: Int,
+            strikePercentage: Float
+            hitBatsmen: Int
+            groundOutsToAirouts: Float
+            pitchesPerInning: Float
+            strikeoutWalkRatio: Float
+            strikeoutsPer9Inn: Float
+            walksPer9Inn: Float
+            hitsPer9Inn: Float
+            runsScoredPer9: Float
+            homeRunsPer9: Float
 }
 
 type Query {    
@@ -91,4 +119,10 @@ type Query {
             {field:"code", path:"primaryPosition.code"}
             ]
         )
+
+    pitchingStats (id: ID!): PitchingStats
+        @rest (
+           endpoint: "https://statsapi.mlb.com/api/v1/people/$id/stats?stats=season&group=pitching"
+           resultroot: "stats[].splits[].stat"
+        )  
 }

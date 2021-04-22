@@ -53,8 +53,8 @@ body {
 }
 
 .Card-Reading-Container {
-  width: 30vh;
-  height: 50vh;
+  width: 25vh;
+  height: 35vh;
   will-change: transform;
   display: flex;
   align-items: center;
@@ -79,8 +79,8 @@ body {
 }
 
 .Card-Container {
-  width: 30vh;
-  height: 50vh;
+  width: 25vh;
+  height: 40vh;
   will-change: transform;
   display: flex;
   align-items: center;
@@ -92,9 +92,9 @@ body {
   background-size: auto 85%;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 30vh;
+  width: 25vh;
   max-width: 300px;
-  height: 50vh;
+  height: 40vh;
   max-height: 570px;
   will-change: transform;
   border-radius: 10px;
@@ -120,7 +120,11 @@ body {
 
 .Position{
   position: absolute;
-  right: 5px;
+  right: 3px;
+  text-align: center;
+  border-radius: 10px;
+  padding:5%;
+  width: 20%;
 }
 
 .Header{
@@ -205,3 +209,12 @@ h2{
     font-weight: bold;
 }
 
+.Techs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Techbox{
+  padding: 30px
+}

@@ -1,10 +1,9 @@
 schema
   @sdl(
     files: [
-      "helloworld.graphql"
+
       "player.graphql"
-      "single.graphql"
-      "all.graphql"
+
     ]
   ) {
   query: Query
