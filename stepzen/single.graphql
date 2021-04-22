@@ -1,9 +1,0 @@
-type Character {
-
-    name: String
-}
-type Query {
-    characterById: Character
-       @rest (endpoint: "https://swapi.dev/api/people/1/")
-}
-
