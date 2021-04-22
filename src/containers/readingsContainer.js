@@ -93,7 +93,6 @@ const dispatch = useDispatch();
                 
               <button onClick={(e)=>onCardClick(e)}>Click Here to Buy a Pack</button>
               <div className="Pack-Wrapper" id ="wrapper" style={{ backgroundImage:'none', backgroundColor: `none`, zIndex: "-1"}} onClick={(e) => openPack(e)}>
-                  {/* {Cards} */}
                   <h3 id="wrapper-text" style= {{visibility: "hidden", backgroundColor: `rgb(250, 250, 250)`}}>click to open</h3>
                   {deck}
               </div>
