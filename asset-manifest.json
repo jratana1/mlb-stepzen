@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/mlb-stepzen/static/css/main.5421d39b.chunk.css",
-    "main.js": "/mlb-stepzen/static/js/main.8e8557d3.chunk.js",
-    "main.js.map": "/mlb-stepzen/static/js/main.8e8557d3.chunk.js.map",
-    "runtime-main.js": "/mlb-stepzen/static/js/runtime-main.ba9113fe.js",
-    "runtime-main.js.map": "/mlb-stepzen/static/js/runtime-main.ba9113fe.js.map",
-    "static/js/2.5b23197c.chunk.js": "/mlb-stepzen/static/js/2.5b23197c.chunk.js",
-    "static/js/2.5b23197c.chunk.js.map": "/mlb-stepzen/static/js/2.5b23197c.chunk.js.map",
-    "static/js/3.8a7012cf.chunk.js": "/mlb-stepzen/static/js/3.8a7012cf.chunk.js",
-    "static/js/3.8a7012cf.chunk.js.map": "/mlb-stepzen/static/js/3.8a7012cf.chunk.js.map",
+    "main.css": "/mlb-stepzen/static/css/main.e15bebad.chunk.css",
+    "main.js": "/mlb-stepzen/static/js/main.053ace0c.chunk.js",
+    "main.js.map": "/mlb-stepzen/static/js/main.053ace0c.chunk.js.map",
+    "runtime-main.js": "/mlb-stepzen/static/js/runtime-main.f932f92e.js",
+    "runtime-main.js.map": "/mlb-stepzen/static/js/runtime-main.f932f92e.js.map",
+    "static/js/2.6f02c273.chunk.js": "/mlb-stepzen/static/js/2.6f02c273.chunk.js",
+    "static/js/2.6f02c273.chunk.js.map": "/mlb-stepzen/static/js/2.6f02c273.chunk.js.map",
+    "static/js/3.f16819af.chunk.js": "/mlb-stepzen/static/js/3.f16819af.chunk.js",
+    "static/js/3.f16819af.chunk.js.map": "/mlb-stepzen/static/js/3.f16819af.chunk.js.map",
     "index.html": "/mlb-stepzen/index.html",
-    "static/css/main.5421d39b.chunk.css.map": "/mlb-stepzen/static/css/main.5421d39b.chunk.css.map",
-    "static/js/2.5b23197c.chunk.js.LICENSE.txt": "/mlb-stepzen/static/js/2.5b23197c.chunk.js.LICENSE.txt",
+    "static/css/main.e15bebad.chunk.css.map": "/mlb-stepzen/static/css/main.e15bebad.chunk.css.map",
+    "static/js/2.6f02c273.chunk.js.LICENSE.txt": "/mlb-stepzen/static/js/2.6f02c273.chunk.js.LICENSE.txt",
     "static/media/20200715_112939.5b54978b.jpg": "/mlb-stepzen/static/media/20200715_112939.5b54978b.jpg",
+    "static/media/base-ball.1edd9c82.png": "/mlb-stepzen/static/media/base-ball.1edd9c82.png",
     "static/media/baseball-batter-silhouette-clip-art-1.eeff709b.svg": "/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-1.eeff709b.svg",
     "static/media/baseball-batter-silhouette-clip-art-2.94d2e6bc.svg": "/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-2.94d2e6bc.svg",
     "static/media/baseball-batter-silhouette-clip-art-3.9ccc83bd.svg": "/mlb-stepzen/static/media/baseball-batter-silhouette-clip-art-3.9ccc83bd.svg",
@@ -32,9 +33,9 @@
     "static/media/running-baseball-player-silhouette-clip-art-5.550d853e.svg": "/mlb-stepzen/static/media/running-baseball-player-silhouette-clip-art-5.550d853e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba9113fe.js",
-    "static/js/2.5b23197c.chunk.js",
-    "static/css/main.5421d39b.chunk.css",
-    "static/js/main.8e8557d3.chunk.js"
+    "static/js/runtime-main.f932f92e.js",
+    "static/js/2.6f02c273.chunk.js",
+    "static/css/main.e15bebad.chunk.css",
+    "static/js/main.053ace0c.chunk.js"
   ]
 }
