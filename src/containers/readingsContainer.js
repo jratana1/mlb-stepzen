@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import ReadingCardContainer from './readingCardContainer'
 import { useDispatch, useSelector } from 'react-redux'
+import { setFlag, setFlagFalse } from "../actions/readingsActions";
+import baseball from "../assets/base-ball.png"
+
 
 export function getRandom(arr, n) {
   var result = new Array(n),
@@ -57,25 +60,43 @@ const dispatch = useDispatch();
  
     setDeck([
       ...deck,
-      <ReadingCardContainer key= {pack[0].id} props={pack[0]}  x="0" y="0" />,
-      <ReadingCardContainer key= {pack[1].id} props={pack[1]}  x="0" y="0" />,
-      <ReadingCardContainer key= {pack[2].id} props={pack[2]}  x="0" y="0" />,
-      <ReadingCardContainer key= {pack[3].id} props={pack[3]}  x="0" y="0" />,
-      <ReadingCardContainer key= {pack[4].id} props={pack[4]}  x="0" y="0" />
-
+      <ReadingCardContainer key= {pack[0].id} props={pack[0]}   />,
+      <ReadingCardContainer key= {pack[1].id} props={pack[1]}   />,
+      <ReadingCardContainer key= {pack[2].id} props={pack[2]}   />,
+      <ReadingCardContainer key= {pack[3].id} props={pack[3]}   />,
+      <ReadingCardContainer key= {pack[4].id} props={pack[4]}   />
     ])
-
+    dispatch(setFlag())
   }
 
   const onCardClick = (event) => { 
     newPack()
-    
+    document.getElementById("wrapper").style.zIndex = "initial"
+    document.getElementById("wrapper").style.backgroundColor = `rgb(177, 0, 0)`
+    document.getElementById("wrapper-text").style.zIndex = "initial"
+    document.getElementById("wrapper-text").style.visibility = "visible"
+    document.getElementById("wrapper").style.backgroundImage = `url(${baseball})`
+
+  }
+
+  const openPack = (event) => {
+    document.getElementById("wrapper").style.backgroundColor = ""
+    document.getElementById("wrapper").style.zIndex = -1
+    document.getElementById("wrapper-text").style.zIndex = -1
+    document.getElementById("wrapper-text").style.visibility = "hidden"
+    document.getElementById("wrapper").style.backgroundImage = `none`
+
+
   }
 
     return <div className="Reading-Container">
-              {/* {Cards} */}
-              {deck}
-              <button onClick={(e)=>onCardClick()}>Click Here to Buy a Pack</button>
+                
+              <button onClick={(e)=>onCardClick(e)}>Click Here to Buy a Pack</button>
+              <div className="Pack-Wrapper" id ="wrapper" style={{ backgroundImage:'none', backgroundColor: `none`, zIndex: "-1"}} onClick={(e) => openPack(e)}>
+                  {/* {Cards} */}
+                  <h3 id="wrapper-text" style= {{visibility: "hidden", backgroundColor: `rgb(250, 250, 250)`}}>click to open</h3>
+                  {deck}
+              </div>
           </div>
  
 }

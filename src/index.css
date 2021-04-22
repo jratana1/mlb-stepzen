@@ -50,16 +50,33 @@ body {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
+  z-index: 1000;
 }
+
+
+.Pack-Wrapper {
+  width: 29vh;
+  height: 44vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position:absolute;
+  left: 600px;
+  bottom: 200px;
+  background-size: contain;
+  display: flex;
+}
+
 
 .Card-Reading-Container {
   width: 25vh;
-  height: 35vh;
+  height: 40vh;
   will-change: transform;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
+  z-index: -1;
 }
 
 .Card-Index{

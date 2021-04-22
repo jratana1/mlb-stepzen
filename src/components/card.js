@@ -1,5 +1,6 @@
 import { useSpring, animated as a } from "react-spring";
 import React, {useState} from "react";
+
 import batter1 from '../assets/baseball-batter-silhouette-clip-art-1.svg'
 import batter2 from '../assets/baseball-batter-silhouette-clip-art-2.svg'
 import batter3 from '../assets/baseball-batter-silhouette-clip-art-3.svg'
@@ -10,7 +11,6 @@ import runner2 from '../assets/running-baseball-player-silhouette-clip-art-2.svg
 import runner3 from '../assets/running-baseball-player-silhouette-clip-art-3.svg'
 import runner4 from '../assets/running-baseball-player-silhouette-clip-art-4.svg'
 import runner5 from '../assets/running-baseball-player-silhouette-clip-art-5.svg'
-
 import pitcher1 from '../assets/baseball-pitcher-silhouette-clip-art-1.svg'
 import pitcher2 from '../assets/baseball-pitcher-silhouette-clip-art-2.svg'
 import pitcher3 from '../assets/baseball-pitcher-silhouette-clip-art-3.svg'

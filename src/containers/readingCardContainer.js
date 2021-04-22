@@ -16,7 +16,7 @@ export default function ReadingCardContainer(props)  {
   const dispatch = useDispatch();
   const isFirstRun = useRef(true);
   const [flipped, setFlipped] = useState(false)
-  const [{ pos }, setPos] = useSpring(() => ({ pos: [500, -200], config: {mass: 2, tension: 100, friction: 50}
+  const [{ pos }, setPos] = useSpring(() => ({ pos: [0, 0], config: {mass: 2, tension: 100, friction: 50}
   }))
 
   const [ tap, setTap] = useState(false)
@@ -48,7 +48,7 @@ export default function ReadingCardContainer(props)  {
         isFirstRun.current = false;
         return;
       }
-      setPos({pos: [0, 0]})
+      setPos({pos: [-600, 200]})
       setFlipped(false)
       
       // if (props.buy){
@@ -99,11 +99,11 @@ export default function ReadingCardContainer(props)  {
       return interpolate([pos], ([x, y]) => `translate3d(${x}px,${y}px,0)` )
     }
 
-    return   <a.div id={`card-${props.props.id}`} className="Card-Reading-Container" onClick={(event) => onCardClick(event)} onMouseDown={(event) => onMouseDown(event)}
-                {...bind()}
-                style={{ transform: translate()}}>
-                    <Card props={props.props} flipped= {flipped} />
-                    
-             </a.div>
-
+    return    <a.div id={`card-${props.props.id}`} className="Card-Reading-Container" onClick={(event) => onCardClick(event)} onMouseDown={(event) => onMouseDown(event)}
+                    {...bind()}
+                    style={{ transform: translate()}}>
+                        <Card props={props.props} flipped= {flipped} />
+                        
+                </a.div>
+  
 }
