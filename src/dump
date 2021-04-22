@@ -1,0 +1,14 @@
+  // const newCard = () => {
+  //   let card = []
+  //   card = getRandom(props.players.players,1)
+
+  //   setDeck([
+  //     ...deck,
+  //     <ReadingCardContainer key= {card[0].id} props={card[0]} x="0" y="0" />
+  //   ])
+  // }
+
+  // const onCardClick = (event) => { 
+  //   newCard()
+  // }
+    
