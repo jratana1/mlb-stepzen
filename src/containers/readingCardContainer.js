@@ -1,21 +1,24 @@
 import { useSpring, animated as a, interpolate } from "react-spring";
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useDrag } from 'react-use-gesture'
 import Card from '../components/card'
 import { useDispatch, useSelector } from "react-redux";
+import { increment } from "../actions/readingsActions";
+import { setFlagFalse } from "../actions/readingsActions";
 
 
 export default function ReadingCardContainer(props)  {
   // const current = useSelector(state => state.readings.current);
-  // const count = useSelector(state => state.readings.counter);
-  // const flag = useSelector(state => state.readings.flag);
+  const count = useSelector(state => state.readings.counter);
+  const flag = useSelector(state => state.readings.flag);
   
   // const scope = useSelector(state => state.readings.readings);
-  // const dispatch = useDispatch();
-  
+  const dispatch = useDispatch();
+  const isFirstRun = useRef(true);
   const [flipped, setFlipped] = useState(false)
-  const [{ pos }, setPos] = useSpring(() => ({ pos: [0, 0], config: {mass: 2, tension: 100, friction: 50}
+  const [{ pos }, setPos] = useSpring(() => ({ pos: [500, -200], config: {mass: 2, tension: 100, friction: 50}
   }))
+
   const [ tap, setTap] = useState(false)
   const [self] = useState(props.props.id)
   
@@ -31,34 +34,41 @@ export default function ReadingCardContainer(props)  {
 
     const onCardClick = (event) => { 
       if (tap) setFlipped(state => !state)
-      // event.target.closest(".Card-Reading-Container").style.zIndex= count
+      dispatch(increment())
+      event.target.closest(".Card-Reading-Container").style.zIndex= count
       }
 
     const onMouseDown = (event) => {
-      // event.target.closest(".Card-Reading-Container").style.zIndex= count
+      dispatch(increment())
+      event.target.closest(".Card-Reading-Container").style.zIndex= count
     }
-    // useEffect(() => {
-    //     setPos({pos: [0, 0]})
-    //     setFlipped(false)
-    //  const reading= scope.find(obj => obj.id === current)
-    //   if (reading){
-    //       if (reading.relationships.cards.data[0].id === self) {
-    //         setPos({pos: [300,-100]})
-    //         setFlipped(true)
-    //       }
+  
+    useEffect(() => {
+      if (isFirstRun.current) {
+        isFirstRun.current = false;
+        return;
+      }
+      setPos({pos: [0, 0]})
+      setFlipped(false)
+      
+      // if (props.buy){
+      //     if (reading.relationships.cards.data[0].id === self) {
+      //       setPos({pos: [300,-100]})
+      //       setFlipped(true)
+      //     }
 
-    //     if (reading.relationships.cards.data[1].id === self)  {
-    //     setPos({pos: [600,-100]})
-    //     setFlipped(true)
-    //     }
+      //   if (reading.relationships.cards.data[1].id === self)  {
+      //   setPos({pos: [600,-100]})
+      //   setFlipped(true)
+      //   }
 
-    //    if (reading.relationships.cards.data[2].id === self)  {
-    //     setPos({pos: [900,-100]})
-    //     setFlipped(true)
-    //   }
+      //  if (reading.relationships.cards.data[2].id === self)  {
+      //   setPos({pos: [900,-100]})
+      //   setFlipped(true)
+      // }
     
-    //   }
-    // }, [current])
+      // }
+    }, [flag])
 
       // useEffect(() => {
  
